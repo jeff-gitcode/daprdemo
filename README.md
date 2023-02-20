@@ -2,6 +2,19 @@
 
 ![alt text](./doc/dapr.JPG)
 
+## Tech Stack
+
+- [x] Dapr
+- [x] Rest
+- [x] StateStore
+- [x] Pub/Sub
+- [x] Grpc
+- [x] Zipkin
+- [x] Tye
+- [x] Dapr Dashboard
+- [] K8s [TODO]
+- [] LocalStack [TODO]
+
 ```powershell
 # install dapr cli
 $ powershell -Command "iwr -useb https://raw.githubusercontent.com/dapr/cli/master/install/install.ps1 | iex"
@@ -149,7 +162,9 @@ http://localhost:8080
 
 ```
 
-## Localstack
+## k8s [TODO]
+
+## Localstack [TODO]
 
 ```powershell
 $ docker-compose up -d
