@@ -1,0 +1,23 @@
+@daprstatestore = http://localhost:55725/v1.0/state/statestore
+
+### daprstate post
+# @name daprstate-post
+POST {{daprstatestore}} HTTP/1.1
+content-type: application/json
+
+[
+    {
+        "key": "mykey",
+        "value": "myvalue"
+    }
+]
+
+### daprstate get
+# @name daprstate-get
+GET {{daprstatestore}}/mykey HTTP/1.1
+content-type: application/json
+
+### daprstate delete
+# @name daprstate-delete
+DELETE {{daprstatestore}}/mykey HTTP/1.1
+content-type: application/json

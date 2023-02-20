@@ -1,0 +1,11 @@
+@host = http://localhost:5164/WeatherForecast
+@daprhost = http://localhost:3500/v1.0/invoke/api/method/WeatherForecast
+
+# @name WeatherForecast
+GET {{host}} HTTP/1.1
+content-type: application/json
+
+### WeatherForecast(DaprDemo)
+# @name WeatherForecast(DaprDemo)
+GET {{daprhost}} HTTP/1.1
+content-type: application/json
